@@ -1,0 +1,89 @@
+@import './base.css';
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url('./wavy-lines.svg');
+  background-size: cover;
+  user-select: none;
+  font-size: 1.3rem;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  width: 80vw;
+  height: 50vh;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  padding: 1.4em;
+  border-radius: 14px;
+  background-color: #363c5d;
+  border: 0;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #363c5d;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type='checkbox'] {
+  width: 1.4em;
+}
+
+input[type='button'] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+}
+
+h1 {
+  padding: 0.5em 1em;
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+  }
+}
