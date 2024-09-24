@@ -42,5 +42,8 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
+          run: |
+            ls
+            git checkout -c release
           folder: release
           branch: release
